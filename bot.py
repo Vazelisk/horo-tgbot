@@ -10,7 +10,7 @@ server = Flask(__name__)
 bot = telebot.TeleBot(TOKEN)
 
 d = horo_getter.final()
-keyboardmain = types.InlineKeyboardMarkup(row_width=4)
+keyboardmain = types.InlineKeyboardMarkup(row_width=3)
 first_button = types.InlineKeyboardButton(text="Овен", callback_data="first")
 second_button = types.InlineKeyboardButton(text="Телец", callback_data="second")
 third_button = types.InlineKeyboardButton(text="Близнецы", callback_data="third")
