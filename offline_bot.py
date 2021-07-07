@@ -5,27 +5,26 @@ from telebot import types
 
 bot = telebot.TeleBot(conf.TOKEN)
 d = horo_getter.final()
-keyboardmain = types.InlineKeyboardMarkup(row_width=4)
-
+keyboardmain = types.InlineKeyboardMarkup(row_width=3)
+first_button = types.InlineKeyboardButton(text="Овен", callback_data="first")
+second_button = types.InlineKeyboardButton(text="Телец", callback_data="second")
+third_button = types.InlineKeyboardButton(text="Близнецы", callback_data="third")
+fourth_button = types.InlineKeyboardButton(text="Рак", callback_data="fourth")
+fifth_button = types.InlineKeyboardButton(text="Лев", callback_data="fifth")
+sixth_button = types.InlineKeyboardButton(text="Дева", callback_data="sixth")
+seventh_button = types.InlineKeyboardButton(text="Весы", callback_data="seventh")
+eigth_button = types.InlineKeyboardButton(text="Скорпион", callback_data="eigth")
+ninth_button = types.InlineKeyboardButton(text="Стрелец", callback_data="ninth")
+tenth_button = types.InlineKeyboardButton(text="Козерог", callback_data="tenth")
+eleventh_button = types.InlineKeyboardButton(text="Водолей", callback_data="eleventh")
+twelvth_button = types.InlineKeyboardButton(text="Рыбы", callback_data="twelvth")
+keyboardmain.add(first_button, second_button, third_button, fourth_button, fifth_button,
+                 sixth_button, seventh_button, eigth_button, ninth_button, tenth_button,
+                 eleventh_button, twelvth_button)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    global keyboardmain
-    first_button = types.InlineKeyboardButton(text="Овен", callback_data="first")
-    second_button = types.InlineKeyboardButton(text="Телец", callback_data="second")
-    third_button = types.InlineKeyboardButton(text="Близнецы", callback_data="third")
-    fourth_button = types.InlineKeyboardButton(text="Рак", callback_data="fourth")
-    fifth_button = types.InlineKeyboardButton(text="Лев", callback_data="fifth")
-    sixth_button = types.InlineKeyboardButton(text="Дева", callback_data="sixth")
-    seventh_button = types.InlineKeyboardButton(text="Весы", callback_data="seventh")
-    eigth_button = types.InlineKeyboardButton(text="Скорпион", callback_data="eigth")
-    ninth_button = types.InlineKeyboardButton(text="Стрелец", callback_data="ninth")
-    tenth_button = types.InlineKeyboardButton(text="Козерог", callback_data="tenth")
-    eleventh_button = types.InlineKeyboardButton(text="Водолей", callback_data="eleventh")
-    twelvth_button = types.InlineKeyboardButton(text="Рыбы", callback_data="twelvth")
-    keyboardmain.add(first_button, second_button, third_button, fourth_button, fifth_button,
-                     sixth_button, seventh_button, eigth_button, ninth_button, tenth_button,
-                     eleventh_button, twelvth_button)
+
     bot.send_message(message.chat.id, "Здравствуйте! Это бот, который покажет вам актуальный гороскоп",
                      reply_markup=keyboardmain)
 
