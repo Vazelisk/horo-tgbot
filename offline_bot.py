@@ -24,7 +24,6 @@ keyboardmain.add(first_button, second_button, third_button, fourth_button, fifth
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-
     bot.send_message(message.chat.id, "Здравствуйте! Это бот, который покажет вам актуальный гороскоп",
                      reply_markup=keyboardmain)
 
