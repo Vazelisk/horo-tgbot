@@ -1,2 +1,1 @@
-WEBHOOK_HOST = 'horo-bot.herokuapp.com'
-WEBHOOK_PORT = '80'
+TOKEN = 'put your token here'
