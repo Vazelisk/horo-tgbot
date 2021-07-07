@@ -1,1 +1,0 @@
-# goro_tgbot
