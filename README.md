@@ -17,8 +17,8 @@ conf.py, offline_bot.py - используются для локального �
 
 Выбор "Овен"
 
-![image](https://user-images.githubusercontent.com/42929213/125284263-e9bf8200-e321-11eb-8822-2601bf5edc35.png)
+![image](https://user-images.githubusercontent.com/42929213/125284246-e5936480-e321-11eb-8850-429eaac4b244.png)
 
 Выбор "Назад в меню"
 
-![image](https://user-images.githubusercontent.com/42929213/125284246-e5936480-e321-11eb-8850-429eaac4b244.png)
+![image](https://user-images.githubusercontent.com/42929213/125284263-e9bf8200-e321-11eb-8822-2601bf5edc35.png)
